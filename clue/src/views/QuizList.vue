@@ -46,7 +46,7 @@ export default {
       serialGenres: "+",
       genres: [],
       movies: {},
-      BASE_URL: "http://127.0.0.1:8000"
+      BASE_URL: "https://final-be.herokuapp.com"
     };
   },
   methods: {
@@ -114,7 +114,7 @@ export default {
 <style scoped>
 .quizlist {
   width: 100%;
-  height:110%;
+  height:100%;
   color: black;
   background: linear-gradient(-45deg, #3e5151, #decba4);
   background-size: 600% 500%;
