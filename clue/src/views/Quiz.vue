@@ -44,7 +44,7 @@ export default {
       username: "",
       userinfo: {},
       movie: {},
-      BASE_URL: "http://127.0.0.1:8000",
+      BASE_URL: "https://final-be.herokuapp.com",
       keywordsList: [],
       plotList: [],
       genreList: [],
@@ -207,7 +207,7 @@ export default {
       const data = {};
       axios
         .post(
-          `http://127.0.0.1:8000/api/v1/movies/${this.movie.id}/seen/`,
+          `https://final-be.herokuapp.com/api/v1/movies/${this.movie.id}/seen/`,
           data,
           options
         )

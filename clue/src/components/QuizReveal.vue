@@ -211,7 +211,7 @@ export default {
 
       axios
         .post(
-          `http://127.0.0.1:8000/api/v1/movies/${this.movie.id}/reviews/`,
+          `https://final-be.herokuapp.com/api/v1/movies/${this.movie.id}/reviews/`,
           { content: this.reviewText },
           options
         )
@@ -238,7 +238,7 @@ export default {
       };
       axios
         .delete(
-          `http://127.0.0.1:8000/api/v1/movies/${this.movie.id}/reviews/`,
+          `https://final-be.herokuapp.com/api/v1/movies/${this.movie.id}/reviews/`,
           options
         )
         .then(res => {
@@ -267,7 +267,7 @@ export default {
       };
       axios
         .get(
-          `http://127.0.0.1:8000/api/v1/movies/${this.movie.id}/reviews/`,
+          `https://final-be.herokuapp.com/api/v1/movies/${this.movie.id}/reviews/`,
           options
         )
         .then(res => {
@@ -285,7 +285,7 @@ export default {
       const data = {};
       axios
         .post(
-          `http://127.0.0.1:8000/api/v1/movies/${this.movie.id}/like/`,
+          `https://final-be.herokuapp.com/api/v1/movies/${this.movie.id}/like/`,
           data,
           options
         )
